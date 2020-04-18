@@ -14,16 +14,12 @@ function getWeatherForZipCode() {
 
     let zipCodeUrl = getZipCodeUrl(zipCode);
 
-    // if (!validateZipCode(zipCodeUrl)) {
-    //     return false;
-    // }
-
     let weatherUrl = getWeatherUrl(zipCode);
     getWeatherFromServer(weatherUrl).json;
 };
 
 //#region server calls
-
+//decided to try to use another api
 const validateZipCode = async (zipCodeUrl = '') => {
     try {
         const request = await fetch(zipCodeUrl);
