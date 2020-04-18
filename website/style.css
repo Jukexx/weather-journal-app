@@ -8,7 +8,7 @@ body{
     grid-auto-rows: minmax(150px, auto);
     /* grid-template-columns:  */
     height:100vh;
-    background: #f23557;
+    background: #215b8b;
     color: #f0d43a;
     justify-content: center;
     grid-gap: 1em;
@@ -109,3 +109,15 @@ button:focus {
     font-family: 'Oswald', sans-serif;
 
 } 
+
+.valid{
+    background-color: green;
+}
+.error{
+    background-color: red;
+}
+
+#invalidzipwarning{
+    margin-top: 30px;
+    color: red;
+}
